@@ -1,0 +1,136 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Space Grotesk', sans-serif;
+	text-decoration: none;
+
+}
+.team{
+    position: relative;
+	height: 100vh;
+	width: 100vw;
+	background: radial-gradient(#0b0946,#000000);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-size: cover;
+
+}
+
+.logo-row{
+    text-align: center;
+}
+header{
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.logo {
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0,1));
+    width: 180px;
+    height: 180px;
+    text-align: center;
+	display: inline-block;
+	transition: all .28s ease;
+}
+.logo:hover{
+	transform: scale(1.3);
+	transition: all .28s ease;
+	cursor: pointer;
+}
+
+.team-content{
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,1));
+	width: 100%;
+	max-width: 1350px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+	align-items: center;
+	gap: 2rem;
+	text-align: center;
+	margin-top: 4rem;
+}
+.team-content img{
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+.center h1{
+    filter: drop-shadow(0px 0px 20px #f5d899);
+    font-size: 8rem;
+    color: #f5d899;
+    letter-spacing: 20px;
+    font-family: 'Courier New', Courier, monospace;
+	border-right: 5px solid;
+    width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	animation:
+		typing 6s steps(15,end)infinite,
+		cursor .4s step-end infinite alternate;
+
+}
+
+@keyframes cursor {
+	50% { border-color: transparent}
+}
+@keyframes typing{
+	0%{width:0}
+	33.33%{width: 100%}
+	100%{width: 100%}
+}
+
+.center h5{
+    text-shadow: 12px 10px 10px black;
+    font-family: 'Courier New', Courier, monospace;
+	color: #f5d899;
+	font-size: 2rem;
+	text-align: center;
+}
+.box{
+	padding: 15px;
+	background: #1b1229;
+	border-radius: 15px;
+	transition: all .38s ease;
+}
+.box h3{
+	font-size: 19px;
+	font-weight: 600;
+	color: #f6ecd3;
+	margin-bottom: 8px;
+}
+.box h5{
+	font-size: 15px;
+	font-weight: 600;
+	color: #b7b4bb;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+.icons i{
+	display: inline-block;
+	color: #f6ecd3;
+	font-size: 20px;
+	margin: 0 10px;
+	transition: all .58s ease;
+}
+.icons i:hover{
+	transform: scale(2.1);
+}
+.box:hover{
+	transform: translateY(-60px);
+	cursor: pointer;
+}
+
+@media(max-width: 100%){
+	.team{
+		width: 100%;
+		height: auto;
+		padding: 100px 2%;
+	}
+	.center h1{
+		font-size: 3.2rem;
+	}
+}
